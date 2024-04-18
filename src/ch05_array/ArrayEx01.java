@@ -7,6 +7,7 @@ public class ArrayEx01 {
 	public static void main(String[] args) {
 		int[] arr1;
 		int arr2[]; // 1. 배열 참조 변수 선언
+		
 		// 2. 배열 객체 생성
 		arr1 = new int[5]; //초기값은 0
 		arr2 = new int[5]; 
