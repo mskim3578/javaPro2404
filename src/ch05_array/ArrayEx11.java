@@ -24,7 +24,7 @@ public class ArrayEx11 {
 	public static void main(String[] args) {
 		int[][] arr = new int[10][]; // 가편배열
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = new int[i + 1];
+			arr[i] = new int[i + 1];//초기화
 		}
 		int data=0;
 		for (int col = arr.length-1 ; col >=0  ; col--) {

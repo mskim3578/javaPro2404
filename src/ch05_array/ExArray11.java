@@ -11,7 +11,25 @@ public class ExArray11 {
 	public static void main(String[] args) {
 		// 0 ~ 9의 임의 6자리 만듬
 		int num[] = new int[10];
+		//1. 초기화
+		for (int i = 0; i < num.length; i++) {
+			num[i]=i;		}
 		
-	}
-}
+		//2 swap
+		 for(int i=0;i<1000;i++) {
+			 int f = (int)(Math.random() * 10 ); 
+			 int t = (int)(Math.random() * 10 ); 
+			 int temp = num[f];
+			 num[f] = num[t];
+			 num[t] = temp;		  }
+		 
+		 int answer[] = new int[11];
+		 System.arraycopy(num, 0, answer, 0, 5);
+		 System.arraycopy(num, 0, answer, 5, 5);
+		  answer[10]=num[5];		  
+		  for (int ans : answer) {
+				System.out.print(ans + ",");
+			}			System.out.println();	
+		
+	}}
 		
