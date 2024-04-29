@@ -7,6 +7,20 @@ package ch11_API;
 public class Api01_Equals {
 
 	public static void main(String[] args) {
+		Equal e1 = new Equal(10);
+		Equal e2 = new Equal(10);
+		
+		if (e1 == e2) {   //주소가 다름  : false
+			System.out.println("e1과 e2는 같은 객체임");
+		} else {
+			System.out.println("e1과 e2는 다른 객체임");
+		}
+		
+		if (e1.equals(e2)) {  //value==e.value  value 같음  :true
+			System.out.println("e1과 e2는 같은 내용(동등)의 객체임");
+		} else {
+			System.out.println("e1과 e2는 다른 내용(동등)의 객체임");
+		}
 	}
 }
 class Equal {
