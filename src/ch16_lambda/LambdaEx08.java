@@ -16,7 +16,7 @@ public class LambdaEx08 {
 
 	public static void main(String[] args) {
 		System.out.print("학생의 이름:");
-		printString(t -> t.getName());
+		printString(t ->  t.getName()); //String f.apply(t){t.getName()};
 		System.out.print("전공 이름:");
 		printString(t -> t.getMajor());	
 		System.out.println("=================");
