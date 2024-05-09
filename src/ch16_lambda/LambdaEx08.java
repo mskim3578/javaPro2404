@@ -1,7 +1,10 @@
 package ch16_lambda;
 
+import java.util.Arrays;
 import java.util.function.Function;
 import java.util.function.ToIntFunction;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 /*
  * Function 계열 함수 인터페이스 : applyXXX  추상메서드를 멤버로 가진다.
@@ -15,6 +18,8 @@ public class LambdaEx08 {
 		  new Student("김삿갓", 95, 70, "컴공") };
 
 	public static void main(String[] args) {
+		Stream<Student> intstream1 = Arrays.stream(list);
+		
 		System.out.print("학생의 이름:");
 		printString(t ->  t.getName()); //String f.apply(t){t.getName()};
 		System.out.print("전공 이름:");
