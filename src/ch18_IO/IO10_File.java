@@ -6,9 +6,10 @@ class IO10_File {
 	static int deletedFiles = 0;
 	public static void main(String[] args) {
 		if(args.length != 1) {
-			System.out.println("USAGE : java FileEx8 Extension");
+			System.out.println("USAGE : java FileEx8 확장자");
 			System.exit(0);
 		}
+		
 		String currDir = System.getProperty("user.dir");
 		File dir = new File(currDir);
 		String ext = "." + args[0];
